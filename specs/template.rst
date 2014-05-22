@@ -54,7 +54,7 @@ A detailed description of the problem:
 
 * For a major reworking of something existing it would describe the
   problems in that feature that are being addressed. In this case, any
-  potential migration issues must be called out upfront. 
+  potential migration issues must be called out upfront.
 
 * For a major functional area not currently addressed within the
   OpenStack Telemetry program, ensure you describe why you think
@@ -92,8 +92,8 @@ Questions which need to be addressed by this section include:
 * What new data objects and/or database schema changes is this going to
   require?
 
-* What database migrations will accompany this change, treating the sql-alchemy
-  and nosql cases separately.
+* What database migrations will accompany this change, treating the SQLAlchemy
+  and NoSQL cases separately.
 
 * Will this add to the on-the-fly data massaging cruft that we've accreted
   over time?
@@ -119,11 +119,11 @@ Each API method which is either added or changed should have the following
   * Expected error http response code(s)
 
     * A description for each possible error code should be included
-      describing semantic errors which can cause it such as
-      inconsistent parameters supplied to the method, or when an
-      instance is not in an appropriate state for the request to
-      succeed. Errors caused by syntactic problems covered by the JSON
-      schema defintion do not need to be included.
+      describing semantic errors which can cause it such as inconsistent
+      parameters supplied to the method, or when an instance is not in an
+      appropriate state for the request to succeed. Errors caused by
+      syntactic problems covered by the JSON schema definition do not need
+      to be included.
 
   * URL for the resource
 
@@ -165,11 +165,11 @@ to the OpenStack Security Group at openstack-security@lists.openstack.org.
 Pipeline impact
 ---------------
 
-Please specify any changes to the metering pipeline, from the data aquisition
+Please specify any changes to the metering pipeline, from the data acquisition
 agents, via the publication conduit(s), through to the database dispatch layer.
 For example:
 
-* Is yet another agent required to host the data aquisition pollsters or
+* Is yet another agent required to host the data acquisition pollsters or
   notification handlers?
 
 * If accommodated in an existing agent, is the scaling of that agent impacted?
@@ -177,10 +177,10 @@ For example:
 * Is explicit configuration of the source and/or transformations required
   in the pipeline.yaml?
 
-* Is the typical cadence of data aquisition likely in practice to be unusually
+* Is the typical cadence of data acquisition likely in practice to be unusually
   frequent or infrequent?
 
-* Is an excplicit resource discovery extension required to retrieve target
+* Is an explicit resource discovery extension required to retrieve target
   resources?
 
 * Is AMQP the appropriate publication conduit for these data?
@@ -215,7 +215,7 @@ for example:
   over very large datasets.
 
 * Whether any explicit performance testing would be advisable to validate
-  the new feature, either at the PoC stage, and/or in its final form.  
+  the new feature, either at the PoC stage, and/or in its final form.
 
 
 Other deployer impact
@@ -227,8 +227,8 @@ have not already been mentioned, such as:
 * What config options are being added?
 
 * How is the storage driver feature parity matrix impacted? Traditionally
-  new features were often only supported initially in the mongodb and
-  sql-alchemy drivers, leaving the more niche drivers to catch up later.
+  new features were often only supported initially in the MongoDB and
+  SQLAlchemy drivers, leaving the more niche drivers to catch up later.
   Though this is established custom and practice, you must explicitly
   state which drivers you intend to address in the first cut.
 
@@ -245,10 +245,10 @@ have not already been mentioned, such as:
   the change landed?  Do we transform them?  Do we continue to support the
   old format in a deprecated form?
 
-* Please state anythng that those doing downstream distro-oriented packaging
-  need to be aware of. For example, is a new service being added, or many
-  new transitive dependencies pulled in, or a new feature that is effectively
-  optional and hence suited to seperate packaging.
+* Please state anything that those doing downstream distro-oriented
+  packaging need to be aware of. For example, is a new service being added,
+  or many new transitive dependencies pulled in, or a new feature that is
+  effectively optional and hence suited to separate packaging.
 
 Developer impact
 ----------------
@@ -307,9 +307,9 @@ Dependencies
   program, or in other programs, that the current blueprint one either depends
   on or is related to.
 
-* If this requires functionality of another pogram that is not currently used
-  by Telemetry (such as a new or extended library provided by the Oslo program),
-  document that fact.
+* If this requires functionality of another program that is not currently
+  used by Telemetry (such as a new or extended library provided by the Oslo
+  program), document that fact.
 
 * Does this feature require any new external dependencies or code otherwise not
   included in OpenStack? Or does it depend on a specific version of library? Is
@@ -321,7 +321,7 @@ Testing
 =======
 
 Please discuss how the change will be tested. We especially want to know what
-Tempest tests will be added. It is assumed that unit and scenario test coverage 
+Tempest tests will be added. It is assumed that unit and scenario test coverage
 will be added so that doesn't need to be mentioned explicitly, but discussion
 of why you think unit/scenario tests are sufficient and we don't need to add
 more tempest testcases would need to be included.
