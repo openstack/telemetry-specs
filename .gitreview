@@ -1,4 +1,4 @@
 [gerrit]
 host=review.openstack.org
 port=29418
-project=openstack/telemetry-specs.git
+project=openstack/ceilometer-specs.git
