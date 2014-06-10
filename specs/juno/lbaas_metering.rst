@@ -52,19 +52,21 @@ Ceilometer:
 
 * Metric Definitions:
 
-Name                                       Type             Unit          Origin
+ ======================================   ========         =============   =========
+              Name                         Type             Unit           Origin
+ ======================================   ========         =============   =========
+ network.services.lb.type                     g              type            p
+ network.services.lb.pool                     g              pool            p
+ network.services.lb.vip                      g              vip             p
+ network.services.lb.member                   g              member          p
+ network.services.lb.health_monitor           g              monitor         p
+ network.services.lb.total.connections        g              connection      p
+ network.services.lb.active.connections       g              connection      p
+ network.services.lb.incoming.bytes           c              B               p
+ network.services.lb.outgoing.bytes           c              B               p
+ ======================================   ========         =============   =========
 
-network.services.lb.type                     g               type            p
-network.services.lb.pools                    g               pool            p
-network.services.lb.vips                     g               vip             p
-network.services.lb.members                  g               member          p
-network.services.lb.health_monitors          g               monitor         p
-network.services.lb.total_connections        d               connections     p
-network.services.lb.active_connections       d               connections     p
-network.services.lb.bytes_in                 d               B               p
-network.services.lb.bytes_out                d               B               p
-
-g = gauge, d = delta, p = pollster
+  * g = gauge, c = cumulative, p = pollster
 
 * Status is captured in an enum-style value in the sample volume, as opposed to
   the resource metadata, for each pool, vip, members and monitor.
