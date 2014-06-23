@@ -98,12 +98,16 @@ The proposed API is:
 
 * `POST /v1/entity`::
 
-     -> {"archives": [[1, 3600], [3600, 720]]}
+     -> {"archives": [{"lifespan": 3600, "points": 1000},
+                      {"lifespan": "1 year", "interval": 60},
+                      {"points": 1000, "interval": 60}]}
      <- 201 Created
         Location: /v1/entity/<uuid>
 
-     Create an entity with 2 archives, one storing one point every second
-     for an hour, and one storing one point every hour for 30 days.
+     Create an entity storing:
+       - 1000 points over an hour
+       - a point every minute over a year
+       - 1000 points with a point every minute.
      The uuid of the entity is returned.
 
 * `POST /v1/entity/<uuid>/measures`::
@@ -151,7 +155,7 @@ The proposed API is:
     -> { "id": <uuid>,
          "started_at": "2013-01-01 12:23:12",
          "project_id": "foobar",
-         "entities": { "cpu.util": {'archives': [[1, 60]]} },
+         "entities": { "cpu.util": {"archives": [{"lifespan": 3600, "points": 1000}]} },
          "user_id": "foobaz"}
     <- { "id": <uuid>,
          "started_at": "2013-01-01 12:23:12",
