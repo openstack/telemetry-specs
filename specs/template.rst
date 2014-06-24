@@ -41,7 +41,7 @@ Some notes about using this template:
   required.  http://asciiflow.com/ is a very nice tool to assist with making
   ascii diagrams.  The reason for this is that the tool used to review specs is
   based purely on plain text.  Plain text will allow review to proceed without
-  having to look at additional files which can not be viewed in gerrit.  It
+  having to look at additional files which can not be viewed in Gerrit.  It
   will also allow inline feedback on the diagram itself.
 
 Problem description
@@ -328,7 +328,7 @@ more tempest testcases would need to be included.
 
 Is this untestable in the upstream gate given current limitations (specific
 hardware / software configurations available)? If so, are there mitigation
-plans (3rd party testing, gate enhancements, etc).
+plans (3rd party testing, gate enhancements, etc.).
 
 
 Documentation Impact

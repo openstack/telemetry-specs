@@ -11,10 +11,10 @@ Dedicated database for the alarm definition and history of Ceilometer
 https://blueprints.launchpad.net/ceilometer/+spec/dedicated-alarm-database
 
 Currently if we use MongoDB for storing metering data, we are forced to use
-mongodb for storing events and alarms. Because the API service can use only
+MongoDB for storing events and alarms. Because the API service can use only
 one database connection object.
 
-Also metering and alarm are two completly different things, but the db code
+Also metering and alarm are two completely different things, but the db code
 are currently in the same place.
 
 The blueprint proposes to allow to have a different database for alarms
@@ -38,7 +38,7 @@ that can be set to metering or alarm.
 This will allow to use a different namespace to load a driver that depends
 of the purpose.
 
-New entrypoints will be added to have a different set of driver for alarm
+New entry points will be added to have a different set of driver for alarm
 and metering.
 
 Ceilometer API will use two connection objects, one for metering and one for
@@ -54,7 +54,7 @@ Data model impact
 
 None
 
-In case of sqlalchemy, migration scripts will continue to be stored in a
+In case of SQLAlchemy, migration scripts will continue to be stored in a
 common place to ensure easy migration.
 And if a dedicated database is used, we accepted having unused and empty
 tables.
@@ -87,7 +87,7 @@ None
 Other deployer impact
 ---------------------
 
-The deployer can now optionnaly define a dedicated database for the alarming
+The deployer can now optionally define a dedicated database for the alarming
 of ceilometer by adding::
 
     [database]
