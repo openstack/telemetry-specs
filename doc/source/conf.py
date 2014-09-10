@@ -23,8 +23,13 @@ sys.path.insert(0, os.path.abspath('../..'))
 extensions = [
     'sphinx.ext.autodoc',
     #'sphinx.ext.intersphinx',
-    'oslosphinx'
+    'oslosphinx',
+    'yasfb',
 ]
+
+# Feed configuration for yasfb
+feed_base_url = 'http://specs.openstack.org/openstack/ceilometer-specs'
+feed_author = 'OpenStack Ceilometer Team'
 
 # autodoc generation is a bit aggressive and a nuisance when doing heavy
 # text edit cycles.
