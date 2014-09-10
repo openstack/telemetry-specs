@@ -4,14 +4,6 @@
 Telemetry Program Specifications
 ================================
 
-Contents:
-
-.. toctree::
-   :glob:
-   :maxdepth: 1
-
-   specs/*
-
 Juno approved specs:
 
 .. toctree::
@@ -20,13 +12,15 @@ Juno approved specs:
 
    specs/juno/*
 
-Kilo approved specs:
+.. NOTE(dhellmann): Uncomment this when the first spec is approved.
 
-.. toctree::
-   :glob:
-   :maxdepth: 1
+   Kilo approved specs:
 
-   specs/kilo/*
+   .. toctree::
+      :glob:
+      :maxdepth: 1
+
+      specs/kilo/*
 
 ==================
 Indices and tables
