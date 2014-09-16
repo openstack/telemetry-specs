@@ -12,11 +12,9 @@ Juno approved specs:
 
    specs/juno/*
 
-.. NOTE(dhellmann): Uncomment this when the first spec is approved.
+Kilo approved specs:
 
-   Kilo approved specs:
-
-   .. toctree::
+.. toctree::
       :glob:
       :maxdepth: 1
 
