@@ -4,9 +4,9 @@
 
  http://creativecommons.org/licenses/by/3.0/legalcode
 
-==========================================
-Example Spec - The title of your blueprint
-==========================================
+======================================
+Middleware-specific Ceilometer Package
+======================================
 
 https://blueprints.launchpad.net/ceilometer/+spec/ceilometermiddleware
 
