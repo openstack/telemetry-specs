@@ -28,6 +28,14 @@ Liberty approved specs:
 
       specs/liberty/*
 
+Mitaka approved specs:
+
+.. toctree::
+      :glob:
+      :maxdepth: 1
+
+      specs/mitaka/*
+
 
 ==================
 Indices and tables
