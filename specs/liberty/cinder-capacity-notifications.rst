@@ -161,7 +161,7 @@ Documentation Impact
 
 The added metrics will need to be documented in the `measurements section`_.
 
-.. _measurements section: http://docs.openstack.org/admin-guide-cloud/content/section_telemetry-measurements.html
+.. _measurements section: http://docs.openstack.org/admin-guide-cloud/telemetry-measurements.html
 
 References
 ==========

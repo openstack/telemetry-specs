@@ -113,7 +113,7 @@ Unit tests should be sufficient.
 Documentation Impact
 ====================
 
-The added metrics will need to be documented in https://github.com/openstack/openstack-manuals/blob/master/doc/admin-guide-cloud/telemetry/tables/ceilometer-measurements-nova.xml which will get reflected in the cloud admin documenation http://docs.openstack.org/admin-guide-cloud/content/section_telemetry-compute-metrics.html
+The added metrics will need to be documented in https://github.com/openstack/openstack-manuals/blob/master/doc/admin-guide-cloud/source/telemetry-measurements.rst which will get reflected in the cloud admin documentation http://docs.openstack.org/admin-guide-cloud/telemetry-measurements.html#openstack-compute
 
 
 References
@@ -121,4 +121,3 @@ References
 
 * [1] https://blueprints.launchpad.net/nova/+spec/memory-resident
 * [2] http://libvirt.org/html/libvirt-libvirt.html#virDomainMemoryStats
-
