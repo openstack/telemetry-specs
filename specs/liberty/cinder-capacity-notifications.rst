@@ -42,13 +42,13 @@ from notifications emitted by Cinder. They will include:
   Note: The capacity which is not allocated thru Cinder is not included in.
 
 * CapacityProvisionedSize
-  It is the capacity which has been provisoned in a pool/backend.
+  It is the capacity which has been provisioned in a pool/backend.
 
   Note: It includes the capacity both allocated directly thru Cinder and not.
   The provisioned capacity size is equal or greater than the allocated size.
 
 * CapacityVirtualfreeSize
-  It is the apparent availabe virtual capacity means how much capacity can
+  It is the apparent available virtual capacity means how much capacity can
   still provision besides the capacity which has been provisioned already
   in the pool/backend.
 
