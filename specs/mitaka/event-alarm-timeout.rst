@@ -8,19 +8,20 @@
 Event Alarm Timeout
 ===================
 
-https://blueprints.launchpad.net/ceilometer/+spec/event-alarm-timeout
+https://blueprints.launchpad.net/aodh/+spec/event-alarm-timeout
 
-This BP adds timeout mechanism for event-alarm. End user can specify a timeout,
-0 (no timeout) by default, for each event-alarm, and alarm status becomes
-'TIMEOUT' after timeout without receiving desired event.
+This BP adds timeout mechanism for event-alarm. End users can specify a
+timeout, 0 (no timeout) by default, for each event-alarm. The alarm status
+becomes 'TIMEOUT' after timeout reached without receiving desired event.
 
 
 Problem description
 ===================
 
-After event-alarm introduced in Liberty, end user or operator could set alarm
-for desired event and get alarmed when receive them. But in some circumstances,
-operator want otherwise: know when not receive desired event.
+After event-alarm were introduced in Liberty, end users or operators could set
+alarm for desired event and get alarmed when it receive them. But in some
+circumstances, operator want to know otherwise: when desired event is not
+received.
 
 For example, "compute.instance.create.end" is the final event sent to message
 bus to indicate success of instance creation. Not receiving it after a long
@@ -31,9 +32,9 @@ Unfortunately, current event-alarm doesn't support it.
 Proposed change
 ===============
 
-When creating event-alarm, adds a new parameter 'timeout' to define a time
-length, so that alarm only gets fired when receiving desired event in such
-length. Otherwise, alarm status becomes 'TIMEOUT'.
+When creating event-alarm, a new parameter 'timeout' is proposed to define a
+expiry time length, so that alarm gets fired when desired event is not received
+in expected time. Otherwise, alarm status becomes 'TIMEOUT'.
 
 Currently, 3 states are supported in alarm: 'UNKNOWN', 'ALARM' and 'OK', so a
 new state 'TIMEOUT' will be added to reflect timeout situation.
@@ -44,8 +45,8 @@ evaluator asks its timeout thread/process to handle timeout request. In this
 way, avoid new process in AODH api and make all alarm handling jobs inside
 evaluator.
 
-Synchronization handling is critical in evaluator, as both evaluator original
-process and timeout process need change status for same alarm. To avoid
+Synchronization handling is critical in evaluator, as both evaluators original
+process and timeout process can change status for same alarm. To avoid
 complicated lock, timeout process just send a 'alarm.timeout.end' event with
 related alarm/project id to 'alarm.all' topic, where evaluator original process
 handle it along with desired event.
@@ -61,10 +62,6 @@ things:
 
 * sends out 'alarm.timeout.end' event
 * pick up nearest timeout request and start sleeping for it
-
-In future, we need timeout thread disaster-recovery capability, that is, no loss
-of timeout info when evaluator crash. Need store pending timeout requests in
-DB, and feed evaluator when restarting.
 
 The final alarm status depends on the order of events. If 'timeout.end' event
 comes first, alarm status becomes 'TIMEOUT' and following desired event is
@@ -230,6 +227,10 @@ Future lifecycle
 ================
 
 To be maintained by edwin-zhai for bug fixing and enhancement.
+
+In future, we need timeout thread disaster-recovery capability, that is, no loss
+of timeout info when evaluator crash. Need store pending timeout requests in
+DB, and feed evaluator when restarting.
 
 
 Dependencies
