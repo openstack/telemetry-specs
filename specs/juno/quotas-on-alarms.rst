@@ -82,7 +82,7 @@ REST API impact
 
 None
 
-No API method is either added or changed. Nevertheless the new error http
+No API method is either added or changed. Nevertheless, the new error http
 response code (HTTP 403) will be returned when the alarm quotas are exceeded.
 
 Security impact

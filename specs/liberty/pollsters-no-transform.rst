@@ -4,9 +4,9 @@
 
  http://creativecommons.org/licenses/by/3.0/legalcode
 
-=====================
-Pollsters No Tranform
-=====================
+=======================
+Pollsters No Transform
+=======================
 
 https://blueprints.launchpad.net/ceilometer/+spec/pollsters-no-transform
 
@@ -30,7 +30,7 @@ Proposed change
 
 One way to resolve this complexity is to not do transformations in the
 pollsters. Instead when new samples are polled, format them as notifications
-and push them onto the notification bus to be retreived by the notification
+and push them onto the notification bus to be retrieved by the notification
 agent. The pipeline within that agent will then do any required transformations.
 
 Besides clarifying the focus of the polling agents it is likely this change

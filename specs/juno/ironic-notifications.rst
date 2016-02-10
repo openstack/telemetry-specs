@@ -164,7 +164,7 @@ References
 ==========
 
 * `Ironic spec`_
-* `Review in progress`_ for sending notifcation from Ironic.
+* `Review in progress`_ for sending notification from Ironic.
 * `Sample data`_
 
 .. _Ironic spec: https://blueprints.launchpad.net/ironic/+spec/send-data-to-ceilometer

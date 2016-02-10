@@ -18,7 +18,7 @@ Problem description
 
 Currently, metering and event data coexists on the same database. While
 related, there's a logical separation in the metering and event models
-where the data in each model has it's own unique data and structure; the
+where the data in each model has its own unique data and structure; the
 metering model can be best described as a time series while the event model is
 closer to an entity attribute model. As the models are different in what they
 capture, it makes sense that deployers may choose to use different storage
@@ -27,8 +27,8 @@ drivers to store each data set.
 Proposed change
 ===============
 
-Similar to the work done to split alarming into it's own database, this
-blueprint is to allow for event related data to be stored in it's own database.
+Similar to the work done to split alarming into its own database, this
+blueprint is to allow for event related data to be stored in its own database.
 
 Alternatives
 ------------

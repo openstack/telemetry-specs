@@ -114,7 +114,7 @@ Work Items
 
 In current cycle:
 
-* send a email to do a user survey to get feedbacks about this change
+* send an email to do a user survey to get feedbacks about this change
 * deprecate mongodb and Hbase storage support and log warning messages if
   config mongodb or Hbase as storage driver
 * add alarm data migration tool for migrating data from mongodb/Hbase to sql

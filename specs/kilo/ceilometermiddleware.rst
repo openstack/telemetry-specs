@@ -43,7 +43,7 @@ Alternatives
 
 - We can continue to publish via the pipeline but it is far too verbose and
   will not solve all dependency issues.
-- Have swift own it's own metrics and have it exist swift package. This is
+- Have swift own its own metrics and have it exist swift package. This is
   dependent on swift accepting something not completely scoped to swift
   internal functionality.
 - Drop support of swift middleware meters (ie. we won't test it but it'll just

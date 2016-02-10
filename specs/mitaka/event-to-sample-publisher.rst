@@ -24,7 +24,7 @@ Proposed change
 ===============
 Add a new notifier publisher and use this publisher in event transformer,
 when there is a new transformed event from events pipeline
-transformers, convert it to notification, send it back to ceilometer notificaton listener,
+transformers, convert it to notification, send it back to ceilometer notification listener,
 the notification payload is generated from event traits,
 then the sample pipeline will convert and publish it into sample.
 

@@ -89,7 +89,7 @@ Alternatives include:
   to implement what are called "SLA checks" via Rally. These allow a
   check job which can fail based on a severe degradation in
   performance. These are not being done now to first gain experience
-  with Rally as well as to comparmentalize work in actionable
+  with Rally as well as to compartmentalize work in actionable
   chunks.
 
 Data model impact

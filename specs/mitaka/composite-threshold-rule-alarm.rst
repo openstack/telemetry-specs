@@ -143,7 +143,7 @@ Data model impact
 -----------------
 
 * The "threshold_rules" will be a dict that can be include multiple threshold
-  rules and the the key of the dict will be "and" or "or". But this has no
+  rules and the key of the dict will be "and" or "or". But this has no
   effect on data model, because the rules is stored as json in db.
 
 REST API impact

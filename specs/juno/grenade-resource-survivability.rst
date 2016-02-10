@@ -45,7 +45,7 @@ types of changes (detailed below): Adding support for Ceilometer queries in
 the `javelin code`_ and adding Ceilometer specific entries to the resource
 definitions.
 
-The main check that will be facillitated by javelin2 is ensuring the sanity of
+The main check that will be facilitated by javelin2 is ensuring the sanity of
 api queries with a time range that spans the entire window of time within which
 the Grenade test runs (e.g. -+12 hours from now).
 

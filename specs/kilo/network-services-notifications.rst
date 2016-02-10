@@ -44,7 +44,7 @@ The Neutron event topic names have the following pattern,
 * <resource>.delete.end
 
 For this implementation we will track the end events as those give us the most information
-with respect to event payload. Also end events are more informative to track the existance
+with respect to event payload. Also end events are more informative to track the existence
 of a resource and its usage over time.
 
 Alternatives

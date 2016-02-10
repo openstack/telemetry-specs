@@ -38,7 +38,7 @@ Add the method 'inspect_disk_iops' in the Inspector and implement it in the
 HyperVInspector. The method will return a DiskIOPSStats object.
 
 The metric value will be fetched from Hyper-V VMs, located in the
-Msvm_AggregationMetricValue object (further refered to as metric object)
+Msvm_AggregationMetricValue object (further referred to as metric object)
 associated with the VMs. The metric object's 'MetricDefinitionId' must be
 equal to the 'Id' of Msvm_AggregationMetricDefinition object having the
 Caption 'Average Normalized Disk Throughput'.

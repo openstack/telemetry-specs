@@ -20,7 +20,7 @@ Problem description
 
 
 Currently, ceilometer doesn't has the capability to get the meters from ceph
-object storage, when the ceph is used as a object storage, instead of swift
+object storage, when the ceph is used as an object storage, instead of swift
 object storage).
 
 

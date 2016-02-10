@@ -260,7 +260,7 @@ to be handled.
 Dependencies
 ============
 
-This work is self contained but may add to the libraries required
+This work is self-contained but may add to the libraries required
 for testing (e.g. wsgi-intercept).
 
 Testing

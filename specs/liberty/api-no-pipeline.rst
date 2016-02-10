@@ -128,7 +128,7 @@ Developer impact
 ----------------
 
 This change may increase the amount of asynchrony in some tests.
-For example the time between posting a sample and being able to
+For example, the time between posting a sample and being able to
 retrieve that sample may become more unpredictable. As it is already
 unpredictable any tests which rely on immediate retrieval are bad
 anyway, so we should fix that.
