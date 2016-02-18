@@ -93,7 +93,7 @@ Next steps for HA notification agent:
 Pros:
    Preferred and Easiest approach
 Cons:
-   It doesnt centralize the pipeline definition and runs the risk of agents
+   It doesn't centralize the pipeline definition and runs the risk of agents
    diverging on their pipeline definitions
 
    This means we're allowing any kind of error levels due to the fact file
@@ -134,7 +134,7 @@ Alternatives
 
 3. Use automated deployment tools - Puppet, Chef, Ansible to change pipeline
    definitions. While this automates changing pipeline definitions across
-   multiple agents, it doesnt bring the value-add of on-the-fly updates to the
+   multiple agents, it doesn't bring the value-add of on-the-fly updates to the
    agent, without incurring a restart of the daemons.
 
    Pros:

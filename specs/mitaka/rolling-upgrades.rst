@@ -65,7 +65,7 @@ There are two upgrade paths to handle -- both require no code change:
      against same pipeline sets.
   4. The new polling agent can be started alongside the old agent only if
      no new pollsters were added. If not, new polling agents must start only
-     in it's own partitioning group and poll only the new pollsters. After
+     in its own partitioning group and poll only the new pollsters. After
      all old agents are upgraded, the polling agents can be changed to poll
      both new pollsters AND the old ones.
   5. API service management is handled by WSGI so there is only ever one

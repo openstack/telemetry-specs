@@ -12,7 +12,7 @@ https://blueprints.launchpad.net/ceilometer/+spec/grenade-upgrade-testing
 
 Integrated projects are required to participate in the `grenade`_ upgrade
 testing harness. Ceilometer was integrated before these requirements were
-added but the requirements apply retroactively. Therefore ceilometer must be
+added but the requirements apply retroactively. Therefore, ceilometer must be
 added to the harness.
 
 .. _grenade: https://github.com/openstack-dev/grenade

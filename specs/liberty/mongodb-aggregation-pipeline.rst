@@ -29,7 +29,7 @@ work and making user reports.
 Proposed change
 ===============
 
-Add a implementation of method get_meter_statistics via MongoDB
+Add an implementation of method get_meter_statistics via MongoDB
 aggregation pipeline framework.
 
 From MongoDB docs:
@@ -66,7 +66,7 @@ This option allows to write intermediate staging data to temporary files.
 So, primary risks of this approach are a necessity of free space
 on disk and a slow performance of disk writing and reading.
 
-Accordingly researches and MongoDB docs, the "$sort" command creates
+Accordingly, researches and MongoDB docs, the "$sort" command creates
 the most amount of intermediate data for follow stages. So, in practice
 this stage prepares data whose size is close to new index size.
 In same time, the indexed fields sorting (like timestamp

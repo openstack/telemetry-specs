@@ -47,7 +47,7 @@ alarm history.
 However their scale might be completely different, so the expiration
 frequency shouldn't be the same.
 
-Therefore we will have separate TTL.
+Therefore, we will have separate TTL.
 
 
 Data model impact

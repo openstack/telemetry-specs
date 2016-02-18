@@ -40,7 +40,7 @@ configure the kafka publisher plugin in pipeline.yaml file like::
         - kafka://<broker_ip>?topic=<topic_name>
 
 This way any application that is trying to consume streaming ceilometer
-metrics via Kafka, can directly consume the ceilometer samples. For example
+metrics via Kafka, can directly consume the ceilometer samples. For example,
 projects like monasca - https://github.com/stackforge/monasca-thresh can consume
 the ceilometer metrics that are published by the Ceilometer Kafka publisher.
 
@@ -70,7 +70,7 @@ connections are under implementation. More information can be found in the refer
 Pipeline impact
 ---------------
 
-Provide new options to specify kafka publiser as a ceilometer publisher
+Provide new options to specify kafka publisher as a ceilometer publisher
 
 Other end user impact
 ---------------------

@@ -10,7 +10,7 @@ Spliting Ceilometer alarming
 
 https://blueprints.launchpad.net/ceilometer/+spec/split-ceilometer-alarming
 
-Ceilometer evolved from a a simple meter gathering component to a lot of
+Ceilometer evolved from a simple meter gathering component to a lot of
 different component doing different things. The storage layer has been
 abstracted during Juno and Kilo and is going to be handled by Gnocchi. This
 spec proposes that the work continues so that the alarming subsystem of

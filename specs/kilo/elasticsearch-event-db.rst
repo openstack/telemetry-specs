@@ -109,7 +109,7 @@ Other deployer impact
 ---------------------
 
 The ElasticSearch storage driver is to have feature parity with the rest of
-the currently available event driver backends. It will add a elasticsearch-py
+the currently available event driver backends. It will add an elasticsearch-py
 client dependency should the driver be selected.
 
 Developer impact

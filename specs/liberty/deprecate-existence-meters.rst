@@ -113,7 +113,7 @@ Performance/Scalability Impacts
 -------------------------------
 
 Less sample data. Less equivalent data in Events (because of trait filtering).
-Events are a bit more scalable in it's design (maybe not the SQL backend).
+Events are a bit more scalable in its design (maybe not the SQL backend).
 
 Other deployer impact
 ---------------------

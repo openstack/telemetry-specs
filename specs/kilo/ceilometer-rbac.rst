@@ -70,7 +70,7 @@ Proposed change
 We propose to solve the problem by moving access control from calls to the ACL
 to applying a decorator to the API methods.  Each publicly accessible API
 method would have a decorator pointing to a new RBAC module.  The RBAC module
-decorator would use rules defined in policy.json to determine accesibility of
+decorator would use rules defined in policy.json to determine accessibility of
 methods by a caller.
 
 This would allow fine-grained, role-dependent, method-specific access control.
@@ -135,7 +135,7 @@ manage.
 
 We believe this risk is mitigated by the ability to ship the basic code with
 only the current context_is_admin rule enabled.  Such configuration would not
-allow additional Keystone roles to grant new priviliges unless the system
+allow additional Keystone roles to grant new privileges unless the system
 operators explicitly added new rules to the policy file.
 
 Pipeline impact
@@ -148,7 +148,7 @@ Other end user impact
 
 This will have no direct impact on on python-ceilometerclient as roles and
 their associated rules would be established in keystone and interpreted by
-Ceilometer API. Nevertheless the python-ceilometerclient will benefit from the
+Ceilometer API. Nevertheless, the python-ceilometerclient will benefit from the
 increase security provided by the new policy support. For instance, collector
 agent (or any other ceilometer service) can have a special role associated
 with it disallowing other services (with admin status) to post data in the

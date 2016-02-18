@@ -118,7 +118,7 @@ Ongoing maintainer:
 Work Items
 ----------
 
-* Seperate eventlet and non-eventlet commands into two different module
+* Separate eventlet and non-eventlet commands into two different module
   directories, starting with the api module.
 * Compare and contrast performance of the API server with and without eventlet
   paying specific attention to the impact on accessing the storage layer. Mike

@@ -120,7 +120,7 @@ None, we will continue to store a new resource per sample
 Performance/Scalability Impacts
 -------------------------------
 
-The read performance should improve as we will not have have a giant Sample
+The read performance should improve as we will not have a giant Sample
 table anymore but smaller, tailored Resource, Meter, and Sample tables.
 The write performance is not expected to degrade noticeably.
 
