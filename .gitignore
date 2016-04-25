@@ -3,3 +3,5 @@ doc/build
 *.egg-info
 *.pyc
 .tox
+AUTHORS
+ChangeLog

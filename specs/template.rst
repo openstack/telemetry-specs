@@ -50,7 +50,7 @@ Some notes about using this template:
   you should add the APIImpact flag to the commit message. Specifications with
   the APIImpact flag can be found with the following query::
 
-  https://review.openstack.org/#/q/status:open+project:openstack/ceilometer-specs+message:apiimpact,n,z
+    https://review.openstack.org/#/q/status:open+project:openstack/ceilometer-specs+message:apiimpact,n,z
 
 
 Problem description
