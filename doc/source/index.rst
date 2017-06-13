@@ -44,6 +44,14 @@ Newton approved specs:
 
       specs/newton/*
 
+Pike approved specs:
+
+.. toctree::
+      :glob:
+      :maxdepth: 1
+
+      specs/pike/*
+
 ==================
 Indices and tables
 ==================
