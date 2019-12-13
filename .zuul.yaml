@@ -3,7 +3,7 @@
       - openstack-specs-jobs
     check:
       jobs:
-        - openstack-tox-py27
+        - openstack-tox-py37
     gate:
       jobs:
-        - openstack-tox-py27
+        - openstack-tox-py37

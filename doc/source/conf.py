@@ -24,7 +24,7 @@ sys.path.insert(0, os.path.abspath('../..'))
 extensions = [
     'sphinx.ext.autodoc',
     #'sphinx.ext.intersphinx',
-    'oslosphinx',
+    'openstackdocstheme',
     'yasfb',
 ]
 
@@ -50,6 +50,11 @@ master_doc = 'index'
 # General information about the project.
 project = u'telemetry-specs'
 copyright = u'%s, OpenStack Foundation' % datetime.date.today().year
+
+# openstackdocstheme options
+repository_name = 'openstack/python-glanceclient'
+use_storyboard = True
+html_theme = 'openstackdocs'
 
 # If true, '()' will be appended to :func: etc. cross-reference text.
 add_function_parentheses = True
