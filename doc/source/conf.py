@@ -13,16 +13,12 @@
 # limitations under the License.
 
 import datetime
-import os
-import sys
 
-sys.path.insert(0, os.path.abspath('../..'))
 # -- General configuration ----------------------------------------------------
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
 extensions = [
-    'sphinx.ext.autodoc',
     #'sphinx.ext.intersphinx',
     'openstackdocstheme',
     'yasfb',
@@ -52,7 +48,7 @@ project = u'telemetry-specs'
 copyright = u'%s, OpenStack Foundation' % datetime.date.today().year
 
 # openstackdocstheme options
-repository_name = 'openstack/python-glanceclient'
+repository_name = 'openstack/telemetry-specs'
 use_storyboard = True
 html_theme = 'openstackdocs'
 
