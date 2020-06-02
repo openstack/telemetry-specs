@@ -25,8 +25,8 @@ extensions = [
 ]
 
 # Feed configuration for yasfb
-feed_base_url = 'http://specs.openstack.org/openstack/ceilometer-specs'
-feed_author = 'OpenStack Ceilometer Team'
+feed_base_url = 'https://specs.openstack.org/openstack/telemetry-specs'
+feed_author = 'OpenStack Telemetry Team'
 
 exclude_patterns = [
     'template.rst',
@@ -48,8 +48,9 @@ project = u'telemetry-specs'
 copyright = u'%s, OpenStack Foundation' % datetime.date.today().year
 
 # openstackdocstheme options
-repository_name = 'openstack/telemetry-specs'
-use_storyboard = True
+openstackdocs_repo_name = 'openstack/telemetry-specs'
+openstackdocs_auto_name = False
+openstackdocs_use_storyboard = True
 html_theme = 'openstackdocs'
 
 # If true, '()' will be appended to :func: etc. cross-reference text.
@@ -60,7 +61,7 @@ add_function_parentheses = True
 add_module_names = True
 
 # The name of the Pygments (syntax highlighting) style to use.
-pygments_style = 'sphinx'
+pygments_style = 'native'
 
 # -- Options for HTML output --------------------------------------------------
 
