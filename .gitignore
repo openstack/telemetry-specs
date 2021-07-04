@@ -1,7 +1,15 @@
-.testrepository
-doc/build
-*.egg-info
 *.pyc
+
+# Packages
+*.egg-info
+
+# Unit test / coverage reports
 .tox
+.stestr
+
+# Sphinx
+doc/build
+
+# pbr generates these
 AUTHORS
 ChangeLog
