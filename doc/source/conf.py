@@ -44,8 +44,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'telemetry-specs'
-copyright = u'%s, OpenStack Foundation' % datetime.date.today().year
+project = 'telemetry-specs'
+copyright = '%s, OpenStack Foundation' % datetime.date.today().year
 
 # openstackdocstheme options
 openstackdocs_repo_name = 'openstack/telemetry-specs'
@@ -80,8 +80,8 @@ htmlhelp_basename = '%sdoc' % project
 latex_documents = [
     ('index',
      '%s.tex' % project,
-     u'%s Documentation' % project,
-     u'OpenStack Foundation', 'manual'),
+     '%s Documentation' % project,
+     'OpenStack Foundation', 'manual'),
 ]
 
 # Example configuration for intersphinx: refer to the Python standard library.
